@@ -30,7 +30,7 @@ function drawSongs(songList){
     '<h3>'+song.artist +'</h3>'+
     '<img src="'+song.albumArt+'">'+ 
     '<h2>' +song.collection + '</h2>'+
-    '<h5>$'+song.price +'</h5>'
+    '<h5>Price: $' +song.price +'</h5>'
     +'Click Here'.link(song.preveiw)+
     '</li>';
     }
