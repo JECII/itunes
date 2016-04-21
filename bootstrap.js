@@ -1,1 +1,0 @@
-$("reset").css('background-color',"blue")

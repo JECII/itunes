@@ -1,8 +1,4 @@
-.songlist{ 
-  border-radius: 4px;
-  margin: 20px 50px;
-  }
-  
+
  .list-group{
       background: black;    
   }
@@ -12,7 +8,13 @@
       
   }
 .row{
-    background: deepskyblue;
+    background: #A9F5F2;
     margin-bottom: 20px;
      box-shadow: 10px 10px 20px black;
 }
+
+#get-music-button{
+    
+    background: #A9F5F2;
+    
+    }

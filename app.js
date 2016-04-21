@@ -25,9 +25,9 @@ function drawSongs(songList) {
     var song = songList[i];
     if (song) {
       document.getElementById("songlist").innerHTML += '<li class="list-group-item"><div class="row">'
-  + '<div class="col-sm-2"><img src="' + song.albumArt + '" alt="album"/></div>'
-  + '<div class="col-sm-3">Title: '  + song.title + '<br>Collection: ' + song.collection + '</div>'
-  + '<div class="col-sm-5"><audio controls><source src="' + song.preview + '" type="audio/ogg"></audio> </div><div class="col-sm-2">Price: $' + song.price + '</div></div></li><br>';
+        + '<div class="col-sm-2"><img src="' + song.albumArt + '" alt="album"/></div>'
+        + '<div class="col-sm-3">Title: ' + song.title + '<br>Collection: ' + song.collection + '</div>'
+        + '<div class="col-sm-5"><audio controls><source src="' + song.preview + '" type="audio/ogg"></audio> </div><div class="col-sm-2">Price: $' + song.price + '</div></div></li><br>';
     }
   }
 }
@@ -37,5 +37,5 @@ function reset() {
 
 }
 
-$("Reset").css('background-color',"blue")
+$("Reset").css('background-color', "blue")
 
