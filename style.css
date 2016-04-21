@@ -1,0 +1,18 @@
+.songlist{ 
+  border-radius: 4px;
+  margin: 20px 50px;
+  }
+  
+ .list-group{
+      background: black;    
+  }
+  
+  .listgroup{
+      background-color: black;
+      
+  }
+.row{
+    background: deepskyblue;
+    margin-bottom: 20px;
+     box-shadow: 10px 10px 20px black;
+}
