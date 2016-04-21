@@ -37,5 +37,5 @@ function reset() {
 
 }
 
-
+$("Reset").css('background-color',"blue")
 
