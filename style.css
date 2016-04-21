@@ -1,0 +1,20 @@
+
+ .list-group{
+      background: black;    
+  }
+  
+  .listgroup{
+      background-color: black;
+      
+  }
+.row{
+    background: #A9F5F2;
+    margin-bottom: 20px;
+     box-shadow: 10px 10px 20px black;
+}
+
+#get-music-button{
+    
+    background: #A9F5F2;
+    
+    }

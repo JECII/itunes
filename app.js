@@ -1,16 +1,15 @@
-function getMusic(){
+function getMusic() {
   var artist = document.getElementById('artist').value;
   itunes.getMusicByArtist(artist).then(drawSongs);
 }
 
-var obj= function (title, albumArt, artist,collection,price,preview)
-{
-    this.title = title;
-    this.albumArt= albumArt;
-    this.artist = artist;
-    this.collection = collection;
-    this.price= price;
-    this.preview = preview;
+var obj = function (title, albumArt, artist, collection, price, preview) {
+  this.title = title;
+  this.albumArt = albumArt;
+  this.artist = artist;
+  this.collection = collection;
+  this.price = price;
+  this.preview = preview;
 }
 songList = [{
   title: 'song title',
@@ -21,26 +20,22 @@ songList = [{
   preview: 'url will play the song'
 }]
 
-function drawSongs(songList){ 
-  for (var i=0;i<songList.length;i++)
-  { var song= songList[i];
-  if(song){
-    document.getElementById("songlist").innerHTML += '<li class="list-group-item">' +
-    '<h4>'+song.title +'</h4>'+
-    '<h3>'+song.artist +'</h3>'+
-    '<img src="'+song.albumArt+'">'+ 
-    '<h2>' +song.collection + '</h2>'+
-    '<h5>Price: $' +song.price +'</h5>'
-    +'Click Here'.link(song.preveiw)+
-    '</li>';
+function drawSongs(songList) {
+  for (var i = 0; i < songList.length; i++) {
+    var song = songList[i];
+    if (song) {
+      document.getElementById("songlist").innerHTML += '<li class="list-group-item"><div class="row">'
+        + '<div class="col-sm-2"><img src="' + song.albumArt + '" alt="album"/></div>'
+        + '<div class="col-sm-3">Title: ' + song.title + '<br>Collection: ' + song.collection + '</div>'
+        + '<div class="col-sm-5"><audio controls><source src="' + song.preview + '" type="audio/ogg"></audio> </div><div class="col-sm-2">Price: $' + song.price + '</div></div></li><br>';
     }
   }
 }
 
-function reset(){
-  document.getElementById("songlist").innerText=''
-  
-} 
-  
+function reset() {
+  document.getElementById("songlist").innerText = ''
 
+}
+
+$("Reset").css('background-color', "blue")
 
